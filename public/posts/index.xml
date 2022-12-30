@@ -6,7 +6,29 @@
     <description>Recent content in Posts on 纸条屋</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 20 Dec 2022 18:56:53 +0800</lastBuildDate><atom:link href="http://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 30 Dec 2022 10:36:23 +0800</lastBuildDate><atom:link href="http://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>VPS Config</title>
+      <link>http://example.org/posts/vps-config/</link>
+      <pubDate>Fri, 30 Dec 2022 10:36:23 +0800</pubDate>
+      
+      <guid>http://example.org/posts/vps-config/</guid>
+      <description>之前购买的腾讯云的套餐还有一周到期了, 看了眼价格500/年, 属实是有点贵. 本着能嫖一年是一年的心态, 于是我又在网上开始找不同
+vps厂商新用户的活动, 这次我选择了ucloud
+  配置
+ 第一年83, 比腾讯云还贵点&amp;hellip;
+   windows ssh秘钥登录配置 购买时默认的用户名为ubuntu, 密码也是在购买时设置的
+首先大体介绍一下ssh配置主要过程
+ 客户端通过ssh-keygen生成私钥和公钥文件  默认的加密算法是RSA 默认的秘钥存放路径是: C:\User\用户名\.ssh   用户将公钥写入服务器的/home/用户/.ssh/authorized_keys文件  假设想要以用户A的身份登录远程服务器, 就要将公钥写入/home/A/.ssh/authorized_keys文件    实战   生成RSA秘钥, 包括公钥和私钥
+ssh-keygen 默认生成的秘钥文件为id_rsa(私钥) 和id_rsa.pub(公钥)
+  将RSA公钥拷贝到/home/ubuntu/.ssh/authorized_keys文件
+  测试配置是否成功
+可以发现直接免密码登录成功, 说明秘钥配置成功
+  VScode配置文件编写 通常我会使用vscode的remote-ssh功能直接登录远程服务器, 这需要编写C:\User\.ssh\config
+大功告成!!
+ 参考  SSH秘钥登录 Windows 10 OpenSSH Equivalent of ssh-copy-id    </description>
+    </item>
+    
     <item>
       <title>Test</title>
       <link>http://example.org/posts/test/</link>

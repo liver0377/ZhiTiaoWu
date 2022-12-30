@@ -64,6 +64,16 @@
       
 
       
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/posts/" title="Posts page">
+              Posts
+            </a>
+          </li>
+          
+        </ul>
+      
       
 <div class="ananke-socials">
   
@@ -88,6 +98,36 @@
   <article class="pa3 pa4-ns nested-copy-line-height">
     <section class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy mid-gray"></section>
     <section class="flex-ns flex-wrap justify-around mt5">
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="/posts/vps-config/" class="link black dim">
+        VPS Config
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      之前购买的腾讯云的套餐还有一周到期了, 看了眼价格500/年, 属实是有点贵. 本着能嫖一年是一年的心态, 于是我又在网上开始找不同
+vps厂商新用户的活动, 这次我选择了ucloud
+  配置
+ 第一年83, 比腾讯云还贵点&hellip;
+   windows ssh秘钥登录配置 购买时默认的用户名为ubuntu, 密码也是在购买时设置的
+首先大体介绍一下ssh配置主要过程
+ 客户端通过ssh-keygen生成私钥和公钥文件  默认的加密算法是RSA 默认的秘钥存放路径是: C:\User\用户名\.ssh   用户将公钥写入服务器的/home/用户/.ssh/authorized_keys文件  假设想要以用户A的身份登录远程服务器, 就要将公钥写入/home/A/.ssh/authorized_keys文件    实战   生成RSA秘钥, 包括公钥和私钥
+ssh-keygen 默认生成的秘钥文件为id_rsa(私钥) 和id_rsa.pub(公钥)
+  将RSA公钥拷贝到/home/ubuntu/.ssh/authorized_keys文件
+  测试配置是否成功
+可以发现直接免密码登录成功, 说明秘钥配置成功
+  VScode配置文件编写 通常我会使用vscode的remote-ssh功能直接登录远程服务器, 这需要编写C:\User\.ssh\config
+大功告成!!
+ 参考  SSH秘钥登录 Windows 10 OpenSSH Equivalent of ssh-copy-id    
+    </div>
+  </div>
+</div>
+
+        </div>
       
         <div class="relative w-100 w-30-l mb4 bg-white">
           <div class="relative w-100 mb4 bg-white nested-copy-line-height">

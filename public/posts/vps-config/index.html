@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>VPS Config | 纸条屋</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="之前购买的腾讯云的套餐还有一周到期了, 看了眼价格500/年, 属实是有点贵. 本着能嫖一年是一年的心态, 于是我又在网上开始找不同
+vps厂商新用户的活动, 这次我选择了ucloud
+  配置
+ 第一年83, 比腾讯云还贵点&hellip;
+   windows ssh秘钥登录配置 购买时默认的用户名为ubuntu, 密码也是在购买时设置的
+首先大体介绍一下ssh配置主要过程
+ 客户端通过ssh-keygen生成私钥和公钥文件  默认的加密算法是RSA 默认的秘钥存放路径是: C:\User\用户名\.ssh   用户将公钥写入服务器的/home/用户/.ssh/authorized_keys文件  假设想要以用户A的身份登录远程服务器, 就要将公钥写入/home/A/.ssh/authorized_keys文件    实战   生成RSA秘钥, 包括公钥和私钥
+ssh-keygen 默认生成的秘钥文件为id_rsa(私钥) 和id_rsa.pub(公钥)
+  将RSA公钥拷贝到/home/ubuntu/.ssh/authorized_keys文件
+  测试配置是否成功
+可以发现直接免密码登录成功, 说明秘钥配置成功
+  VScode配置文件编写 通常我会使用vscode的remote-ssh功能直接登录远程服务器, 这需要编写C:\User\.ssh\config
+大功告成!!
+ 参考  SSH秘钥登录 Windows 10 OpenSSH Equivalent of ssh-copy-id    ">
+    <meta name="generator" content="Hugo 0.92.2" />
+    
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.min.css" >
+
+
+
+    
+    
+    
+      
+
+    
+
+    
+    
+    <meta property="og:title" content="VPS Config" />
+<meta property="og:description" content="之前购买的腾讯云的套餐还有一周到期了, 看了眼价格500/年, 属实是有点贵. 本着能嫖一年是一年的心态, 于是我又在网上开始找不同
+vps厂商新用户的活动, 这次我选择了ucloud
+  配置
+ 第一年83, 比腾讯云还贵点&hellip;
+   windows ssh秘钥登录配置 购买时默认的用户名为ubuntu, 密码也是在购买时设置的
+首先大体介绍一下ssh配置主要过程
+ 客户端通过ssh-keygen生成私钥和公钥文件  默认的加密算法是RSA 默认的秘钥存放路径是: C:\User\用户名\.ssh   用户将公钥写入服务器的/home/用户/.ssh/authorized_keys文件  假设想要以用户A的身份登录远程服务器, 就要将公钥写入/home/A/.ssh/authorized_keys文件    实战   生成RSA秘钥, 包括公钥和私钥
+ssh-keygen 默认生成的秘钥文件为id_rsa(私钥) 和id_rsa.pub(公钥)
+  将RSA公钥拷贝到/home/ubuntu/.ssh/authorized_keys文件
+  测试配置是否成功
+可以发现直接免密码登录成功, 说明秘钥配置成功
+  VScode配置文件编写 通常我会使用vscode的remote-ssh功能直接登录远程服务器, 这需要编写C:\User\.ssh\config
+大功告成!!
+ 参考  SSH秘钥登录 Windows 10 OpenSSH Equivalent of ssh-copy-id    " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/posts/vps-config/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-12-30T10:36:23+08:00" />
+<meta property="article:modified_time" content="2022-12-30T10:36:23+08:00" />
+
+<meta itemprop="name" content="VPS Config">
+<meta itemprop="description" content="之前购买的腾讯云的套餐还有一周到期了, 看了眼价格500/年, 属实是有点贵. 本着能嫖一年是一年的心态, 于是我又在网上开始找不同
+vps厂商新用户的活动, 这次我选择了ucloud
+  配置
+ 第一年83, 比腾讯云还贵点&hellip;
+   windows ssh秘钥登录配置 购买时默认的用户名为ubuntu, 密码也是在购买时设置的
+首先大体介绍一下ssh配置主要过程
+ 客户端通过ssh-keygen生成私钥和公钥文件  默认的加密算法是RSA 默认的秘钥存放路径是: C:\User\用户名\.ssh   用户将公钥写入服务器的/home/用户/.ssh/authorized_keys文件  假设想要以用户A的身份登录远程服务器, 就要将公钥写入/home/A/.ssh/authorized_keys文件    实战   生成RSA秘钥, 包括公钥和私钥
+ssh-keygen 默认生成的秘钥文件为id_rsa(私钥) 和id_rsa.pub(公钥)
+  将RSA公钥拷贝到/home/ubuntu/.ssh/authorized_keys文件
+  测试配置是否成功
+可以发现直接免密码登录成功, 说明秘钥配置成功
+  VScode配置文件编写 通常我会使用vscode的remote-ssh功能直接登录远程服务器, 这需要编写C:\User\.ssh\config
+大功告成!!
+ 参考  SSH秘钥登录 Windows 10 OpenSSH Equivalent of ssh-copy-id    "><meta itemprop="datePublished" content="2022-12-30T10:36:23+08:00" />
+<meta itemprop="dateModified" content="2022-12-30T10:36:23+08:00" />
+<meta itemprop="wordCount" content="44">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="VPS Config"/>
+<meta name="twitter:description" content="之前购买的腾讯云的套餐还有一周到期了, 看了眼价格500/年, 属实是有点贵. 本着能嫖一年是一年的心态, 于是我又在网上开始找不同
+vps厂商新用户的活动, 这次我选择了ucloud
+  配置
+ 第一年83, 比腾讯云还贵点&hellip;
+   windows ssh秘钥登录配置 购买时默认的用户名为ubuntu, 密码也是在购买时设置的
+首先大体介绍一下ssh配置主要过程
+ 客户端通过ssh-keygen生成私钥和公钥文件  默认的加密算法是RSA 默认的秘钥存放路径是: C:\User\用户名\.ssh   用户将公钥写入服务器的/home/用户/.ssh/authorized_keys文件  假设想要以用户A的身份登录远程服务器, 就要将公钥写入/home/A/.ssh/authorized_keys文件    实战   生成RSA秘钥, 包括公钥和私钥
+ssh-keygen 默认生成的秘钥文件为id_rsa(私钥) 和id_rsa.pub(公钥)
+  将RSA公钥拷贝到/home/ubuntu/.ssh/authorized_keys文件
+  测试配置是否成功
+可以发现直接免密码登录成功, 说明秘钥配置成功
+  VScode配置文件编写 通常我会使用vscode的remote-ssh功能直接登录远程服务器, 这需要编写C:\User\.ssh\config
+大功告成!!
+ 参考  SSH秘钥登录 Windows 10 OpenSSH Equivalent of ssh-copy-id    "/>
+
+	
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        纸条屋
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/posts/" title="Posts page">
+              Posts
+            </a>
+          </li>
+          
+        </ul>
+      
+      
+<div class="ananke-socials">
+  
+</div>
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked">
+          
+        POSTS
+      </aside>
+      
+
+
+
+
+
+
+
+
+
+
+  <div id="sharing" class="mt3 ananke-socials">
+    
+  </div>
+
+
+      <h1 class="f1 athelas mt3 mb1">VPS Config</h1>
+      
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2022-12-30T10:36:23+08:00">December 30, 2022</time>
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><p>之前购买的腾讯云的套餐还有一周到期了, 看了眼价格500/年, 属实是有点贵. 本着能嫖一年是一年的心态, 于是我又在网上开始找不同</p>
+<p>vps厂商新用户的活动, 这次我选择了<code>ucloud</code></p>
+<ul>
+<li>
+<p>配置</p>
+<p><img src="http://www.cdn.liver0377.xyz/typora/image-20221230104440731.png" alt="image-20221230104440731"></p>
+<blockquote>
+<p>第一年83, 比腾讯云还贵点&hellip;</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="windows-ssh秘钥登录配置">windows ssh秘钥登录配置</h3>
+<p>购买时默认的用户名为<code>ubuntu</code>, 密码也是在购买时设置的</p>
+<p>首先大体介绍一下<code>ssh</code>配置主要过程</p>
+<ul>
+<li>客户端通过<code>ssh-keygen</code>生成私钥和公钥文件
+<ul>
+<li>默认的加密算法是RSA</li>
+<li>默认的秘钥存放路径是: <code>C:\User\用户名\.ssh</code></li>
+</ul>
+</li>
+<li>用户将公钥写入服务器的<code>/home/用户/.ssh/authorized_keys</code>文件
+<ul>
+<li>假设想要以用户A的身份登录远程服务器, 就要将公钥写入<code>/home/A/.ssh/authorized_keys</code>文件</li>
+</ul>
+</li>
+</ul>
+<h4 id="实战">实战</h4>
+<ul>
+<li>
+<p>生成RSA秘钥, 包括公钥和私钥</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">ssh-keygen 
+</code></pre></div><p><img src="http://www.cdn.liver0377.xyz/typora/image-20221230105955626.png" alt="image-20221230105955626"></p>
+<p>默认生成的秘钥文件为<code>id_rsa</code>(私钥) 和<code>id_rsa.pub</code>(公钥)</p>
+</li>
+<li>
+<p>将RSA公钥拷贝到<code>/home/ubuntu/.ssh/authorized_keys</code>文件</p>
+<p><img src="http://www.cdn.liver0377.xyz/typora/image-20221230110229088.png" alt="image-20221230110229088"></p>
+</li>
+<li>
+<p>测试配置是否成功</p>
+<p><img src="http://www.cdn.liver0377.xyz/typora/image-20221230110414506.png" alt="image-20221230110414506"></p>
+<p>可以发现直接免密码登录成功, 说明秘钥配置成功</p>
+</li>
+</ul>
+<h3 id="vscode配置文件编写">VScode配置文件编写</h3>
+<p>通常我会使用<code>vscode</code>的<code>remote-ssh</code>功能直接登录远程服务器, 这需要编写<code>C:\User\.ssh\config</code></p>
+<p><img src="http://www.cdn.liver0377.xyz/typora/image-20221230110623957.png" alt="image-20221230110623957"></p>
+<p>大功告成!!</p>
+<ul>
+<li>参考
+<ul>
+<li><a href="https://wangdoc.com/ssh/key">SSH秘钥登录</a></li>
+<li><a href="https://chrisjhart.com/Windows-10-ssh-copy-id/">Windows 10 OpenSSH Equivalent of ssh-copy-id</a></li>
+</ul>
+</li>
+</ul>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://example.org/" >
+    &copy;  纸条屋 2022 
+  </a>
+    <div>
+<div class="ananke-socials">
+  
+</div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>
