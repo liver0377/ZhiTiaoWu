@@ -1,4 +1,4 @@
-baseURL = 'http://example.org/'
+baseURL = 'https://zhitiaowu.netlify.app/'
 languageCode = 'zh-cn'
 title = '纸条屋'
 theme = 'PaperMod'
