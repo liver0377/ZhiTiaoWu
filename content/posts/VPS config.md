@@ -12,7 +12,7 @@ vps厂商新用户的活动, 这次我选择了`ucloud`
 
 - 配置
 
-  ![image-20221230104440731](http://www.cdn.liver0377.xyz/typora/image-20221230104440731.png)
+  ![image-20221230104440731](D:/Typora/pics/image-20221230104440731-1672382812042-5.png)
 
   > 第一年83, 比腾讯云还贵点...
 
@@ -44,17 +44,17 @@ vps厂商新用户的活动, 这次我选择了`ucloud`
   ssh-keygen 
   ```
 
-  ![image-20221230105955626](http://www.cdn.liver0377.xyz/typora/image-20221230105955626.png)
+  ![image-20221230105955626](D:/Typora/pics/image-20221230105955626-1672382804439-3.png)
 
   默认生成的秘钥文件为`id_rsa`(私钥) 和`id_rsa.pub`(公钥)
 
 - 将RSA公钥拷贝到`/home/ubuntu/.ssh/authorized_keys`文件
 
-  ![image-20221230110229088](http://www.cdn.liver0377.xyz/typora/image-20221230110229088.png)
+  ![image-20221230110229088](D:/Typora/pics/image-20221230110229088.png)
 
 - 测试配置是否成功
 
-  ![image-20221230110414506](http://www.cdn.liver0377.xyz/typora/image-20221230110414506.png)
+  ![image-20221230110414506](D:/Typora/pics/image-20221230110414506-1672382791570-1.png)
 
   可以发现直接免密码登录成功, 说明秘钥配置成功
 
@@ -64,7 +64,7 @@ vps厂商新用户的活动, 这次我选择了`ucloud`
 
 通常我会使用`vscode`的`remote-ssh`功能直接登录远程服务器, 这需要编写`C:\User\.ssh\config`
 
-![image-20221230110623957](http://www.cdn.liver0377.xyz/typora/image-20221230110623957.png)
+![image-20221230110623957](D:\typora\pics\image-20221230110623957.png)
 
 
 
@@ -79,3 +79,4 @@ vps厂商新用户的活动, 这次我选择了`ucloud`
 - 参考
   - [SSH秘钥登录](https://wangdoc.com/ssh/key)
   - [Windows 10 OpenSSH Equivalent of ssh-copy-id](https://chrisjhart.com/Windows-10-ssh-copy-id/)
+

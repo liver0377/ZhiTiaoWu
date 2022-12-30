@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on 纸条屋</title>
-    <link>http://example.org/posts/</link>
+    <link>https://zhitiaowu.netlify.app/posts/</link>
     <description>Recent content in Posts on 纸条屋</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 30 Dec 2022 10:36:23 +0800</lastBuildDate><atom:link href="http://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 30 Dec 2022 10:36:23 +0800</lastBuildDate><atom:link href="https://zhitiaowu.netlify.app/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>VPS Config</title>
-      <link>http://example.org/posts/vps-config/</link>
+      <link>https://zhitiaowu.netlify.app/posts/vps-config/</link>
       <pubDate>Fri, 30 Dec 2022 10:36:23 +0800</pubDate>
       
-      <guid>http://example.org/posts/vps-config/</guid>
+      <guid>https://zhitiaowu.netlify.app/posts/vps-config/</guid>
       <description>之前购买的腾讯云的套餐还有一周到期了, 看了眼价格500/年, 属实是有点贵. 本着能嫖一年是一年的心态, 于是我又在网上开始找不同
 vps厂商新用户的活动, 这次我选择了ucloud
   配置
@@ -31,10 +31,10 @@ ssh-keygen 默认生成的秘钥文件为id_rsa(私钥) 和id_rsa.pub(公钥)
     
     <item>
       <title>Test</title>
-      <link>http://example.org/posts/test/</link>
+      <link>https://zhitiaowu.netlify.app/posts/test/</link>
       <pubDate>Tue, 20 Dec 2022 18:56:53 +0800</pubDate>
       
-      <guid>http://example.org/posts/test/</guid>
+      <guid>https://zhitiaowu.netlify.app/posts/test/</guid>
       <description>站点创建于2022年12月20日</description>
     </item>
     
